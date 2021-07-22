@@ -1,6 +1,6 @@
 # [IMPORTANT] -- Set enabled to false if you would like the command to be disabled
 reload:
-  error: "&cSorry, you do not have permission to use this command!(InformationPlus.reload)"
+  error: "&cSorry, you do not have permission to use this command!(InformationPlus.admin)"
   message: "&cInformationPlus Reloaded"
 
 main:

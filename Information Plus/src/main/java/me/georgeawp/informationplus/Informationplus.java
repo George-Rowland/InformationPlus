@@ -1,6 +1,7 @@
 package me.georgeawp.informationplus;
 
 import me.georgeawp.informationplus.commands.InformationCommands;
+import me.georgeawp.informationplus.commands.InformationReload;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -25,7 +26,7 @@ public final class Informationplus extends JavaPlugin {
         config = this.getConfig();
         config.options().copyDefaults(true);
         this.saveConfig();
-        getCommand("server").setExecutor(new InformationCommands());
+        getCommand("server").setExecutor(new InformationReload());
     }
 
     @Override

@@ -6,6 +6,9 @@ authors: [ GeorgeAWP ]
 description: A simple command which will allow you to see your servers important links, rules and help.
 
 commands:
+  informationplus:
+    description: The main command to view plugin info
+    usage: /<command>
   server:
     description: Shows the list of commands
     usage: /<command>
