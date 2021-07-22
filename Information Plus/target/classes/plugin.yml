@@ -1,7 +1,7 @@
 name: Informationplus
 version: 1.0
 main: me.georgeawp.informationplus.Informationplus
-api-version: 1.16
+api-version: 1.13
 authors: [ GeorgeAWP ]
 description: A simple command which will allow you to see your servers important links, rules and help.
 
