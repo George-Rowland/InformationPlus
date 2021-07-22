@@ -9,6 +9,15 @@ commands:
   informationplus:
     description: The main command to view plugin info
     usage: /<command>
+
   rules:
     description: Rules command.
-    usage: /rules
+    usage: /<command>
+
+  links:
+    description: Links command
+    usage: /<command>
+
+  help:
+    description: Help command
+    usage: /<command>
