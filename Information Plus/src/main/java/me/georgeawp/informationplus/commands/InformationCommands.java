@@ -9,7 +9,8 @@ import org.bukkit.command.CommandSender;
 public class InformationCommands implements CommandExecutor {
 
     public boolean onCommand(final CommandSender sender, final Command command, final String label, final String[] args) {
-            if (label.equalsIgnoreCase("server")) {
+
+            if (label.equalsIgnoreCase("informationplus")) {
                 if (!sender.hasPermission("InformationPlus.main")) {
                     sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Informationplus.getInstance().config.getString("main.error")));
                     return true;
@@ -47,20 +48,6 @@ public class InformationCommands implements CommandExecutor {
                             sender.sendMessage(ChatColor.translateAlternateColorCodes('&', links));
                         }
                         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Informationplus.getInstance().config.getString("links.border")));
-                        return true;
-                    } else {
-                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Informationplus.getInstance().config.getString("main.error")));
-                    }
-                }
-
-                if (args[0].equalsIgnoreCase("rules")) {
-                    if (sender.hasPermission("InformationPlus.main")) {
-                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Informationplus.getInstance().config.getString("rules.border")));
-                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Informationplus.getInstance().config.getString("rules.header")));
-                        for (String rules : Informationplus.getInstance().config.getStringList("rules.lines")) {
-                            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', rules));
-                        }
-                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Informationplus.getInstance().config.getString("rules.border")));
                         return true;
                     } else {
                         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Informationplus.getInstance().config.getString("main.error")));
