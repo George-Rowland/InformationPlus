@@ -1,0 +1,48 @@
+# [IMPORTANT] -- Set enabled to false if you would like the command to be disabled
+reload:
+  error: "&cSorry, you do not have permission to use this command!(InformationPlus.reload)"
+  message: "&cInformationPlus Reloaded"
+
+main:
+  error: "&cSorry, you do not have permission to use this command!(InformationPlus.main)"
+  unknown: "&cSorry, unknown command!"
+
+commands:
+  enabled: true
+  border: "&d----------------------------------------"
+  header: "&f&l-=[&d&lYourserver Commands&f&l]=-"
+  lines:
+    - "&f&lUsage: /server [command]"
+    - "&f&lLinks"
+    - "&f&lRules"
+    - "&f&lHelp"
+links:
+  enabled: true
+  border: "&d----------------------------------------"
+  header: "&f&l-=[&d&lYourServer Links&f&l]=-"
+  lines:
+    - "&f&lDiscord: &7yourdiscordhere"
+    - "&f&lForums: &7yourforumshere"
+    - "&f&lStore: &7yourstorehere"
+    - "&f&lTS3: &7yourts3here"
+    - "You may add more links in config.yml"
+
+rules:
+  enabled: true
+  border: "&d----------------------------------------"
+  header: "&f&l-=[&d&lYourServer Rules&f&l]=-"
+  lines:
+    - "&f&l1: &7Add your rule here "
+    - "&f&l2: &7Add your rule here"
+    - "&f&l3: &7Add your rule here"
+    - "You may add more rules in config.yml"
+
+help:
+  enabled: true
+  border: "&d----------------------------------------"
+  header: "&f&l-=[&d&lYourServer Help&f&l]=-"
+  lines:
+    - "&f&l1: &7Add your help here"
+    - "&f&l2: &7Add your help here"
+    - "&f&l3: &7Add your help here"
+    - "You may add more help in config.yml"
