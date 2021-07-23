@@ -1,9 +1,6 @@
 package me.georgeawp.informationplus;
 
-import me.georgeawp.informationplus.commands.HelpCommand;
-import me.georgeawp.informationplus.commands.InformationCommands;
-import me.georgeawp.informationplus.commands.LinksCommand;
-import me.georgeawp.informationplus.commands.RulesCommand;
+import me.georgeawp.informationplus.commands.*;
 import me.georgeawp.informationplus.eventlisteners.JoinListener;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -38,6 +35,7 @@ public final class Informationplus extends JavaPlugin {
         getCommand("rules").setExecutor(new RulesCommand());
         getCommand("links").setExecutor(new LinksCommand());
         getCommand("help").setExecutor(new HelpCommand());
+        getCommand("report").setExecutor(new ReportCommand());
     }
 
     @Override

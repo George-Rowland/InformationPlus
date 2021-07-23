@@ -48,3 +48,17 @@ help:
     - "&f&l2: &7Add your help here"
     - "&f&l3: &7Add your help here"
     - "You may add more help in config.yml"
+
+report:
+  enabled: true
+  border: "&d----------------------------------------"
+  header: "&f&l-=[&d&lReport Here&f&l]=-"
+  lines:
+    - "&7If you believe that someone is breaking the rules, rather than"
+    - "&7call them out in chat please report them here:"
+    - ""
+    - "&dChat Reports:"
+    - "&fhttps://chatreportlink/"
+    - ""
+    - "&dGameplay Reports:"
+    - "&fhttps://gameplayreportlink/"

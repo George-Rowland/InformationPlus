@@ -19,7 +19,7 @@ public class InformationCommands implements CommandExecutor {
                     sender.sendMessage(ChatColor.translateAlternateColorCodes('&' , Informationplus.getInstance().config.getString("main.error")));
                     return true;
                 } else {
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&aThis server is currently running InformationPlus Version " + Informationplus.getInstance().getVersion()));
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&aThis server is currently running &f[&cInformationPlus Version " + Informationplus.getInstance().getVersion() + "&f]"));
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&' , "&f&l Player"));
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&' , "&7/help (InformationPlus.main)"));
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&' , "&7/links (InformationPlus.main)"));
