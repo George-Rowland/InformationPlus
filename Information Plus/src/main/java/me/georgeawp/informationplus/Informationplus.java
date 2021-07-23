@@ -17,6 +17,10 @@ public final class Informationplus extends JavaPlugin {
         return instance;
     }
 
+    public String getVersion() { // Get version for /informationplus command.
+        return this.getDescription().getVersion();
+    }
+
     public void reloadConfiguration() {
         this.reloadConfig();
         config = this.getConfig();
