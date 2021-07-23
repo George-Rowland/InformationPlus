@@ -2,6 +2,7 @@ package me.georgeawp.informationplus;
 
 import me.georgeawp.informationplus.commands.*;
 import me.georgeawp.informationplus.eventlisteners.JoinListener;
+import me.georgeawp.informationplus.metrics.Metrics;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -14,7 +15,7 @@ public final class Informationplus extends JavaPlugin {
         return instance;
     }
 
-    public String getVersion() { // Get version for /informationplus command.
+    public String getVersion() {
         return this.getDescription().getVersion();
     }
 
@@ -22,7 +23,6 @@ public final class Informationplus extends JavaPlugin {
         this.reloadConfig();
         config = this.getConfig();
     }
-
 
     @Override
     public void onEnable() {
@@ -36,10 +36,10 @@ public final class Informationplus extends JavaPlugin {
         getCommand("links").setExecutor(new LinksCommand());
         getCommand("help").setExecutor(new HelpCommand());
         getCommand("report").setExecutor(new ReportCommand());
+        new Metrics(this, 12169);
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
     }
 }

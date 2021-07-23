@@ -13,16 +13,13 @@ public class JoinListener implements Listener {
     public boolean onPlayerJoin(PlayerJoinEvent event) {
 
         Player p = event.getPlayer();
-        if(!p.hasPermission("InformationPlus.join")) {
+        if (!p.hasPermission("InformationPlus.join")) {
             return true;
         }
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&' , Informationplus.getInstance().config.getString("join.border")));
+        p.sendMessage(ChatColor.translateAlternateColorCodes('&', Informationplus.getInstance().config.getString("join.border")));
 
-        for(String onjoin : Informationplus.getInstance().config.getStringList("join.lines"))
-        p.sendMessage(ChatColor.translateAlternateColorCodes('&' , onjoin));
+        for (String onjoin : Informationplus.getInstance().config.getStringList("join.lines"))
+            p.sendMessage(ChatColor.translateAlternateColorCodes('&', onjoin));
         return false;
     }
-
-
-
 }
