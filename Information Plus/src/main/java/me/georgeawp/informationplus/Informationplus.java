@@ -4,6 +4,7 @@ import me.georgeawp.informationplus.commands.HelpCommand;
 import me.georgeawp.informationplus.commands.InformationCommands;
 import me.georgeawp.informationplus.commands.LinksCommand;
 import me.georgeawp.informationplus.commands.RulesCommand;
+import me.georgeawp.informationplus.eventlisteners.JoinListener;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -28,6 +29,7 @@ public final class Informationplus extends JavaPlugin {
         config = this.getConfig();
         config.options().copyDefaults(true);
         this.saveConfig();
+        getServer().getPluginManager().registerEvents(new JoinListener(), this);
         getCommand("informationplus").setExecutor(new InformationCommands());
         getCommand("rules").setExecutor(new RulesCommand());
         getCommand("links").setExecutor(new LinksCommand());

@@ -7,15 +7,17 @@ main:
   error: "&cSorry, you do not have permission to use this command!(InformationPlus.main)"
   unknown: "&cSorry, unknown command!"
 
-commands:
+# [IMPORTANT] -- In order for the join message to be enabled the players must have the permission InformationPlus.join
+join:
   enabled: true
   border: "&d----------------------------------------"
-  header: "&f&l-=[&d&lYourserver Commands&f&l]=-"
   lines:
-    - "&f&lUsage: /server [command]"
-    - "&f&lLinks"
-    - "&f&lRules"
-    - "&f&lHelp"
+    - "&fWelcome to &dyourserverhere!"
+    - "&f&lUseful Commands:"
+    - "&f/rules: &7Shows the servers rules"
+    - "&f/help: &7Shows the servers basic commands and help"
+    - "&f/links: &7Shows the servers important links"
+
 links:
   enabled: true
   border: "&d----------------------------------------"
